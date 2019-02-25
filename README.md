@@ -6,3 +6,5 @@ Simple game, that was made while learning basics of Vue.js
 
 - structure;
 - write methods;
+
+live: https://wakadoodlis.github.io/Punch-bag-game
