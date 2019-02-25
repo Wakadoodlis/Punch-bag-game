@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Punc Game</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <!-- bag image -->
+    <div id="bag" v-bind:class="{ burst: ended }"></div>
+
+    <!-- bag health bar -->
+    <div id="bag-health">
+      <div v-bind:style="{ width: health + '%' }"></div>
+    </div>
+
+    <!-- game control buttons -->
+    <div id="controls">
+      <button v-on:click="punch" v-show="!ended">Punch</button>
+      <button v-on:click="restart">Restart</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- vue js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
